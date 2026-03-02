@@ -7,8 +7,8 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
 
 """
 =============================================================
-  SUPER VOICE TOOL v3.0
-  Natural YouTuber-Style Voices via Microsoft Edge TTS
+  ZAS Vocalize - Multi-Character Audio Generator
+  Version: 4.0 (Pro Edition)
   Standalone + n8n + Web UI Ready
 =============================================================
 """
@@ -20,12 +20,9 @@ import os
 from pathlib import Path
 from datetime import datetime
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="[%(asctime)s] %(levelname)s - %(message)s",
-    datefmt="%H:%M:%S"
-)
-log = logging.getLogger("VoiceTool")
+# ─── Setup Logging ───────────────────────────────────────────────────────────
+logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(levelname)s - %(message)s', datefmt='%H:%M:%S')
+log = logging.getLogger("ZAS_Vocalize")
 
 # ─── Character → Edge TTS Neural Voice Map ───────────────────────────────────
 # Microsoft Free Neural Voices — Real human-like speech
